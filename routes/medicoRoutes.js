@@ -12,7 +12,7 @@ const router = Router();
 router.post("/", criarMedico);
 router.get("/", listarMedicos);
 router.get("/:id", buscarMedicoPorId);
-router.put("/:id", atualizarMedico);
+router.patch("/:id", atualizarMedico);
 router.delete("/:id", deletarMedico);
 
 export default router;
