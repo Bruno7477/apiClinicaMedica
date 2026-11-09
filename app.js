@@ -16,9 +16,9 @@ async function iniciarServidor() {
         await conexao.execute("SELECT 1");
         console.log("Banco de dados conectado");
 
-        app.listen(process.env.PORT, () => {
+        app.listen(3001, () => {
             console.log(
-                "API executando em http://localhost:" + process.env.PORT
+                "API executando em http://localhost:3001"
             );
         });
     } catch (erro) {
